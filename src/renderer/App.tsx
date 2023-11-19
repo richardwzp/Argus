@@ -1,7 +1,7 @@
 import { Routes, Route, HashRouter } from 'react-router-dom';
 // import icon from '../../assets/icon.svg';
-import BreakPage from './_pages/Break';
 import MainTimer from './_pages/MainTimer';
+import BreakPage from './_pages/BreakPage';
 
 export default function App() {
   return (

@@ -1,5 +1,21 @@
 import React from 'react';
+import Timer from './Timer';
 
-interface BreakProps {}
+interface BreakProps {
+  breakDurationInSeconds: number;
+}
 
-export default function Break({}: BreakProps): React.JSX.Element {}
+export default function Break({
+  breakDurationInSeconds,
+}: BreakProps): React.JSX.Element {
+  return (
+    <div>
+      this is break page
+      <Timer
+        countDownSeconds={breakDurationInSeconds}
+        startingUnixTime={new Date().getTime()}
+        restart={() => {}}
+      />
+    </div>
+  );
+}
